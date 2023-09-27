@@ -2,9 +2,7 @@
 body {
   background-color:peachpuff;
   color: #10003c;
-  box-sizing: content-box;
   max-width: 900px;
-  padding-left: 2%;
   margin: 0 auto;
 }
 
