@@ -11,6 +11,7 @@
 <body>
   <header>
     <h1>Daniel Hughes</h1>
+    <p id="pronouns">He/Him</p>
     <nav id="links">
       <p>
         <a href="https://github.com/metaknowledge" class="link">Github</a>
@@ -22,11 +23,18 @@
     <h2>Who am I?</h2>
     <p>I am a junior at <span id="uw">University of Washington, Seattle</span></p>
     <p>I am studying Mathematics</p>
-    <p>My favorite programming language is Rust</p>
+    <label for="favcolor">My favorite color is:</label><input type="color" value="#da1e10">
+    <p>My favorite programming language is Rust, and I want to learn Lisp and Haskell</p>
   </main>
 
-
-
-  <ul></ul>
+  <script>
+    "use strict";
+    //
+    function colorLog(message){
+      console.log(`%c${message}`, "color:#cc0000;")
+    }
+    colorLog("▓█████▄  ▄▄▄       ███▄    █  ██▓▓█████  ██▓        ██▓  ██████     ▄████▄   ▒█████   ▒█████   ██▓    \n▒██▀ ██▌▒████▄     ██ ▀█   █ ▓██▒▓█   ▀ ▓██▒       ▓██▒▒██    ▒    ▒██▀ ▀█  ▒██▒  ██▒▒██▒  ██▒▓██▒    \n░██   █▌▒██  ▀█▄  ▓██  ▀█ ██▒▒██▒▒███   ▒██░       ▒██▒░ ▓██▄      ▒▓█    ▄ ▒██░  ██▒▒██░  ██▒▒██░    \n░▓█▄   ▌░██▄▄▄▄██ ▓██▒  ▐▌██▒░██░▒▓█  ▄ ▒██░       ░██░  ▒   ██▒   ▒▓▓▄ ▄██▒▒██   ██░▒██   ██░▒██░    \n░▒████▓  ▓█   ▓██▒▒██░   ▓██░░██░░▒████▒░██████▒   ░██░▒██████▒▒   ▒ ▓███▀ ░░ ████▓▒░░ ████▓▒░░██████▒\n ▒▒▓  ▒  ▒▒   ▓▒█░░ ▒░   ▒ ▒ ░▓  ░░ ▒░ ░░ ▒░▓  ░   ░▓  ▒ ▒▓▒ ▒ ░   ░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░▓  ░\n ░ ▒  ▒   ▒   ▒▒ ░░ ░░   ░ ▒░ ▒ ░ ░ ░  ░░ ░ ▒  ░    ▒ ░░ ░▒  ░ ░     ░  ▒     ░ ▒ ▒░   ░ ▒ ▒░ ░ ░ ▒  ░\n ░ ░  ░   ░   ▒      ░   ░ ░  ▒ ░   ░     ░ ░       ▒ ░░  ░  ░     ░        ░ ░ ░ ▒  ░ ░ ░ ▒    ░ ░   \n   ░          ░  ░         ░  ░     ░  ░    ░  ░    ░        ░     ░ ░          ░ ░      ░ ░      ░  ░\n ░                                                                 ░                                  \n");
+    colorLog("Thank you to matt wang @ mattx.wang for this idea")
+  </script>
 </body>
 </html>
