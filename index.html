@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel's Website</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.1">
-  <link rel="stylesheet" href="index.css">
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Daniel Hughes</h1>
-    <p id="pronouns">He/Him</p>
-    <nav id="links">
-      <p>
-        <a href="https://github.com/metaknowledge" class="link">Github</a> |
-        <!-- Email obfuscation techique learned from https://spencermortensen.com/articles/email-obfuscation/ -->
-        <a href="mailto:%64%61%6e%69%65%6c%68%35%40%75%77%2e%65%64%75">
-          <span class="email">danielh5@uw<b>.example</b>.edu</span>
-        </a> |
-        <a href="https://www.chess.com/member/pap3rn">chess.com</a>
-      </p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.1">
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Daniel Hughes</h1>
+      <p id="pronouns">He/Him</p>
+      <nav id="links">
+        <p>
+          <a href="https://github.com/metaknowledge" class="link chip info">Github</a>
+          <!-- Email obfuscation techique learned from https://spencermortensen.com/articles/email-obfuscation/ -->
+          <a href="mailto:%64%61%6e%69%65%6c%68%35%40%75%77%2e%65%64%75" class="link chip info"><span class="email">danielh5@uw<b>.example</b>.edu</span></a>
+          <a href="https://www.chess.com/member/pap3rn" class="link chip">chess.com</a>
+        </p>
+    </header>
 
-  </header>
-  <main>
-    <h2>Who am I?</h2>
-    <p>I am a junior at <span id="uw">University of Washington, Seattle</span></p>
-    <p>I am studying Mathematics</p>
-    <label for="favcolor">My favorite color is:</label><input type="color" value="#da1e10">
-    <p>My favorite programming language is Rust, and I want to learn Lisp and Haskell</p>
-  </main>
+    <main>
+      <h2>Who am I?</h2>
+      <p>I am a junior at <span id="uw">University of Washington, Seattle</span></p>
+      <p>I am studying Mathematics</p>
+      <label for="favcolor">My favorite color is:</label><input type="color" value="#da1e10">
+      <p>My favorite programming language is Rust, and I want to learn Lisp and Haskell</p>
+      <h2>Projects</h2>
+      <div class="box">
+        <p class="center"><strong>Course Explorer</strong></p>
+        <a href="https://github.com/nexusboyko/course_explorer ">Github</a>
+        <p>Python, React, Canvas API</p>
+      </div>
+      <div class="box">
+        <p class="center"><strong>Ski Instructor Training Manual</strong></p>
+        <a href="https://github.com/HuskyWinterSports/huskywintersports.github.io">Github</a>
+        <p>GitHub Pages, Markdown, Obsidian</p>
+      </div>
+      <div class="box">
+      <p class="center"><strong>Satellitious</strong></p>
+      <a href="https://github.com/metaknowledge/Satellitious">Github</a>
+      <p>Python</p>
+      </div>
+    </main>
 
-  <script>
-    "use strict";
-    //
-    function colorLog(message){
-      console.log(`%c${message}`, "color:#cc0000;")
-    }
-    colorLog("▓█████▄  ▄▄▄       ███▄    █  ██▓▓█████  ██▓        ██▓  ██████     ▄████▄   ▒█████   ▒█████   ██▓    \n▒██▀ ██▌▒████▄     ██ ▀█   █ ▓██▒▓█   ▀ ▓██▒       ▓██▒▒██    ▒    ▒██▀ ▀█  ▒██▒  ██▒▒██▒  ██▒▓██▒    \n░██   █▌▒██  ▀█▄  ▓██  ▀█ ██▒▒██▒▒███   ▒██░       ▒██▒░ ▓██▄      ▒▓█    ▄ ▒██░  ██▒▒██░  ██▒▒██░    \n░▓█▄   ▌░██▄▄▄▄██ ▓██▒  ▐▌██▒░██░▒▓█  ▄ ▒██░       ░██░  ▒   ██▒   ▒▓▓▄ ▄██▒▒██   ██░▒██   ██░▒██░    \n░▒████▓  ▓█   ▓██▒▒██░   ▓██░░██░░▒████▒░██████▒   ░██░▒██████▒▒   ▒ ▓███▀ ░░ ████▓▒░░ ████▓▒░░██████▒\n ▒▒▓  ▒  ▒▒   ▓▒█░░ ▒░   ▒ ▒ ░▓  ░░ ▒░ ░░ ▒░▓  ░   ░▓  ▒ ▒▓▒ ▒ ░   ░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░▓  ░\n ░ ▒  ▒   ▒   ▒▒ ░░ ░░   ░ ▒░ ▒ ░ ░ ░  ░░ ░ ▒  ░    ▒ ░░ ░▒  ░ ░     ░  ▒     ░ ▒ ▒░   ░ ▒ ▒░ ░ ░ ▒  ░\n ░ ░  ░   ░   ▒      ░   ░ ░  ▒ ░   ░     ░ ░       ▒ ░░  ░  ░     ░        ░ ░ ░ ▒  ░ ░ ░ ▒    ░ ░   \n   ░          ░  ░         ░  ░     ░  ░    ░  ░    ░        ░     ░ ░          ░ ░      ░ ░      ░  ░\n ░                                                                 ░                                  \n");
-    colorLog("Thank you to matt wang @ mattx.wang for this idea")
-  </script>
-</body>
+    <script>
+      "use strict";
+      //
+      function colorLog(message){
+        console.log(`%c${message}`, "color:#cc0000;")
+      }
+      colorLog("▓█████▄  ▄▄▄       ███▄    █  ██▓▓█████  ██▓        ██▓  ██████     ▄████▄   ▒█████   ▒█████   ██▓    \n▒██▀ ██▌▒████▄     ██ ▀█   █ ▓██▒▓█   ▀ ▓██▒       ▓██▒▒██    ▒    ▒██▀ ▀█  ▒██▒  ██▒▒██▒  ██▒▓██▒    \n░██   █▌▒██  ▀█▄  ▓██  ▀█ ██▒▒██▒▒███   ▒██░       ▒██▒░ ▓██▄      ▒▓█    ▄ ▒██░  ██▒▒██░  ██▒▒██░    \n░▓█▄   ▌░██▄▄▄▄██ ▓██▒  ▐▌██▒░██░▒▓█  ▄ ▒██░       ░██░  ▒   ██▒   ▒▓▓▄ ▄██▒▒██   ██░▒██   ██░▒██░    \n░▒████▓  ▓█   ▓██▒▒██░   ▓██░░██░░▒████▒░██████▒   ░██░▒██████▒▒   ▒ ▓███▀ ░░ ████▓▒░░ ████▓▒░░██████▒\n ▒▒▓  ▒  ▒▒   ▓▒█░░ ▒░   ▒ ▒ ░▓  ░░ ▒░ ░░ ▒░▓  ░   ░▓  ▒ ▒▓▒ ▒ ░   ░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░▓  ░\n ░ ▒  ▒   ▒   ▒▒ ░░ ░░   ░ ▒░ ▒ ░ ░ ░  ░░ ░ ▒  ░    ▒ ░░ ░▒  ░ ░     ░  ▒     ░ ▒ ▒░   ░ ▒ ▒░ ░ ░ ▒  ░\n ░ ░  ░   ░   ▒      ░   ░ ░  ▒ ░   ░     ░ ░       ▒ ░░  ░  ░     ░        ░ ░ ░ ▒  ░ ░ ░ ▒    ░ ░   \n   ░          ░  ░         ░  ░     ░  ░    ░  ░    ░        ░     ░ ░          ░ ░      ░ ░      ░  ░\n ░                                                                 ░                                  \n");
+      colorLog("Thank you to matt wang @ mattx.wang for this idea")
+    </script>
+  </body>
 </html>
