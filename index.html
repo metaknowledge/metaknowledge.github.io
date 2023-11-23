@@ -6,6 +6,7 @@
   <title>Daniel's Website</title>
   <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.1">
+  <link rel="stylesheet" href="index.css">
   </style>
 </head>
 <body>
@@ -14,8 +15,11 @@
     <p id="pronouns">He/Him</p>
     <nav id="links">
       <p>
-        <a href="https://github.com/metaknowledge" class="link">Github</a>
-        <a href="mailto:danielh5@uw.edu" class="link">Email</a>
+        <a href="https://github.com/metaknowledge" class="link">Github</a> |
+        <!-- Email obfuscation techique learned from https://spencermortensen.com/articles/email-obfuscation/ -->
+        <a href="mailto:%64%61%6e%69%65%6c%68%35%40%75%77%2e%65%64%75">
+          <span class="email">danielh5@uw<b>.example</b>.edu</span>
+        </a> |
         <a href="https://www.chess.com/member/pap3rn">chess.com</a>
       </p>
 
