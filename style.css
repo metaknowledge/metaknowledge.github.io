@@ -1,3 +1,7 @@
 span.email b {
 	display: none;
 }
+
+::target-text {
+    background-color: plum;
+}
