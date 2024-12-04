@@ -1,0 +1,12 @@
+/* danhugh.es */
+
+/* TEAM */
+  Creator: Daniel Hughes
+  Site: danhugh.es
+  From: Seattle WA, USA
+  Powered By: Coffee, breakfast sausage, and those pumpkin shaped candy corn
+
+/* SITE */
+  Founded: 
+  IDE: VS Code
+  Hosting: Github Pages + DigitalOcean
