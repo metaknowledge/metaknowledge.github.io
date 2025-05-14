@@ -4,9 +4,9 @@
   Creator: Daniel Hughes
   Site: danhugh.es
   From: Seattle WA, USA
-  Powered By: Coffee, breakfast sausage, and those pumpkin shaped candy corn
+  Powered By: Coffee, breakfast sausage, and that pumpkin shape candy corn
 
 /* SITE */
   Founded: 
   IDE: VS Code
-  Hosting: Github Pages + DigitalOcean
+  Hosting: Github Pages and Namecheap

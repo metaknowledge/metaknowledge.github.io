@@ -2,67 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- content="width=device-width, initial-scale=1.0" why? -->
+     <!-- why can't it be width="device-width" initial-scale=1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="color-scheme" content="dark">
+    <!-- <link rel="icon" href="data:,"> -->
     <title>Daniel's Website</title>
+    <!-- small tweaks to the css from missing.css -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.1">
-    </style>
+    <!-- <link href="https://barf.btxx.org/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" /> -->
   </head>
   <body>
     <header>
-      <h1 class="allcaps">Daniel Hughes</h1>
+      <h1>Daniel Hughes</h1>
       <sub-title>He/Him</sub-title>
       <nav id="links">
         <p>
-          <a href="https://blog.danhugh.es" class="link chip info">Blog</a>
-          <a href="https://blog.danhugh.es/atom.xml" class="link chip info">Blog rss feed</a>
-          <a href="https://github.com/metaknowledge" class="link chip info">Github</a>
+          <a href="https://blog.danhugh.es">Blog</a>
+          <sup><a href="https://blog.danhugh.es/atom.xml">rss</a></sup> |
+          <a href="https://github.com/metaknowledge">Github</a> |
           <!-- Email obfuscation techique learned from https://spencermortensen.com/articles/email-obfuscation/ -->
-          <a href="mailto:%64%61%6e%69%65%6c%68%35%40%75%77%2e%65%64%75" class="link chip info"><span class="email">danielh5@uw<b>.example</b>.edu</span></a>
-          <a href="https://www.chess.com/member/pap3rn" class="link chip">chess.com</a>
-          <a href="https://www.linkedin.com/in/metaknowledge/" class="link chip info">LinkedIn</a>
-          <a href="https://www.instagram.com/limes.limes/" class="link chip info">Instagram</a>
+          <a href="mailto:%64%61%6e%69%65%6c%68%35%40%75%77%2e%65%64%75"><span class="email">danielh5@uw<b>.example</b>.edu</span></a> |
+          <a href="https://www.chess.com/member/pap3rn">chess.com</a> |
+          <a href="https://www.linkedin.com/in/metaknowledge/">LinkedIn</a> |
+          <a href="https://www.instagram.com/limes.limes/">Instagram</a>
         </p>
     </header>
 
     <main>
-      <h2>Who am I?</h2>
-      <p>I am a senior at <span id="uw">University of Washington, Seattle</span> <em>graduating in june!</em></p>
-      <p>I am studying Mathematics</p>
-      <label for="favcolor">My favorite color is:</label><input type="color" value="#da1e10">
-      <p>My favorite programming language is Rust, and I want to learn Lisp and Haskell</p>
+      <h2>About Me</h2>
+      <p>I am a senior at <span id="uw">University of Washington, Seattle</span> <em>graduating in june!</em>. I have a major in mathematics and a minor in data science.</p>
+      <p>I dabble in programming, and I hope to learn more about things like embedded software, game development, and shader rendering. I'm looking for a job in tech, so if you know of any open positions please email me.</p>
+      <p>I hope to move this website to be completely self hosting in my own homelab in the next year, and host my own email. Because I believe that the internet should be more independent.</p>
       <h2>Projects</h2>
-      <div class="box">
+      <!-- <div class="box">
         <p class="center"><strong>Rust CRUD App: ⛷️StraightLine</strong></p>
         <a href="https://forum.danhugh.es" class="link chip">Deployment: forum.danhugh.es</a>
         <a href="https://github.com/metaknowledge/StraightLine" class="link chip">Github</a>
         <p>Rust, Postgres, HTMX, Docker, Discord API Auth, DigitalOcean</p>
-      </div>
+      </div> -->
       <div class="box">
         <p class="center"><strong>🎿Ski Instructor Training Manual</strong></p>
-        <a href="https://github.com/HuskyWinterSports/huskywintersports.github.io" class="link chip">Github</a>
+        <a href="https://github.com/HuskyWinterSports/huskywintersports.github.io" class="link chip">Github repo</a> |
         <a href="https://huskywintersports.github.io/" class="link chip">Website</a>
-        <p>GitHub Pages, Markdown, Obsidian</p>
+        <p>Used: GitHub Pages, Markdown, Obsidian</p>
+        <p>I was the ski training director for Husky Winter sports, so I made an online training manual.</p>
       </div>
       <div class="box">
         <p class="center"><strong>DubHacks: 🗃️Course Explorer</strong></p>
         <a href="https://github.com/nexusboyko/course_explorer" class="link chip">Github</a>
-        <p>Python, React, Canvas API</p>
+        <p>Used: Python, React, Canvas API</p>
+        <p>For the DubHacks hackathon my team made a app to unify the different website UW professors use.</p>
       </div>
       <div class="box">
       <p class="center"><strong>Pygame Hackathon: 🛰️Satellitious</strong></p>
       <a href="https://github.com/metaknowledge/Satellitious" class="link chip">Github</a>
-      <p>Python, Pygame</p>
+      <p>Used: Python, Pygame</p>
+      <p>Fun space game I made with pygame.</p>
       </div>
-      <div class="box">
+      <!-- <div class="box">
         <p class="center"><strong>Advent of Code 2023</strong></p>
         <a href="https://github.com/metaknowledge/advent_of_code_2023" class="link chip">Github</a>
-        <p>Rust</p>
-      </div>
+        <p>Used: Rust</p>
+      </div> -->
+      <h2>Personal</h2>
       <a href="http://www.nerdtests.com/ft_nt2.php">
         <img src="07b8137334e7c14c.png" alt="NerdTests.com says I'm a Slightly Dorky High Nerd.  Click here to take the Nerd Test, get geeky images and jokes, and write on the nerd forum!">
       </a>
+      <p>If you can get a higher technology/computer score email me your results.</p>
+
+      <h3>r/place</h3>
+      <p>In April of 2022 I participated in the second r/place event. Here's a pic of the area UW claimed.</p>
+      <img src="./imgs/rplace-uw.png" alt="a pixilated U.W. logo with cherry blossoms">
+      <h3>Skiing</h3>
+      <p>I've been skiing for most of my concious life, and ski instructing for 8 years now. Here's a group photo of my last year in Husky Winter Sports(the best ski club at UW).</p>
+      <img src="./imgs/2024-2025.jpg" alt="a group photo of HWS at snoqualmie">
     </main>
+    <footer>
+      <a href="./humans.txt">humans.txt</a>
+    </footer>
+
+
 
     <script>
       "use strict";

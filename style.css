@@ -1,7 +1,39 @@
 span.email b {
-	display: none;
+    display: none;
 }
 
 ::target-text {
     background-color: plum;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+pre {
+    overflow: auto;
+}
+
+s {
+    color: red;
+}
+
+.box {
+    background-color: rgb(0, 46, 59);
+    padding: .5em;
+    padding-top: .25em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+
 }
