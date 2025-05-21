@@ -13,7 +13,7 @@ span.email b {
 body {
     font-family: sans-serif;
     margin: 0 auto;
-    max-width: 650px;
+    max-width: 60em; /* Widened the width because someone told me the style was "smartphone first" */
     padding: 1rem;
 }
 
@@ -41,3 +41,41 @@ s {
 footer {
     margin-top: 1em;
 }
+
+/* The slide show of images */
+#slides {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 24px;
+    scroll-snap-align: start;
+    
+}
+
+.slide {
+    scroll-snap-align: start;
+    position: relative;
+    /* z-index: -1; */
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.slide img {
+    /* width: 60em; */
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    min-width: 30em;
+}
+
+/* for text on top of images */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
