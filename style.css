@@ -32,7 +32,7 @@ s {
 .box {
     background-color: rgb(0, 46, 59);
     padding: .5em;
-    padding-top: .25em;
+    padding-top: .5em;
     border-radius: 1em;
     margin-bottom: 1em;
 
@@ -42,40 +42,7 @@ footer {
     margin-top: 1em;
 }
 
-/* The slide show of images */
-#slides {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-
-    scroll-snap-type: x mandatory;
-    scroll-padding: 0 24px;
-    scroll-snap-align: start;
-    
+.center {
+    display: block;
+    margin: 0 auto;
 }
-
-.slide {
-    scroll-snap-align: start;
-    position: relative;
-    /* z-index: -1; */
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 5px black;
-}
-
-.slide img {
-    /* width: 60em; */
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    min-width: 30em;
-}
-
-/* for text on top of images */
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
