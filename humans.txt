@@ -7,6 +7,6 @@
   Powered By: Coffee, breakfast sausage, and that pumpkin shape candy corn
 
 /* SITE */
-  Founded: 
-  IDE: VS Code
+  Founded: When I was born lol
+  IDE: VS Code although i'm trying to work with neovim more
   Hosting: Github Pages and Namecheap

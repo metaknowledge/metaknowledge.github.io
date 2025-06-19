@@ -46,3 +46,8 @@ footer {
     display: block;
     margin: 0 auto;
 }
+
+/* Highlights imgs that don't have alt tags */
+img:not([alt]) {
+    border: 1rem solid red;
+}
