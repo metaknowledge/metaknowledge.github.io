@@ -21,16 +21,22 @@
       .box {
         display: flex;
         flex-direction: row;
-      } 
-      h3#noai {
-        color: #0f1318;
-        text-align: center;
-        background-color: burlywood;
-        position: absolute;
-        top: 0;
-        width: 75%;
-       transform: rotate(-30deg) translate(-30%, -00%);
       }
+      h3#noai {
+          color: #0f1318;
+          text-align: center;
+          background-color: burlywood;
+      }
+      @media only screen and (min-width: 600px)  {
+        h3#noai {
+          position: absolute;
+          top: 0;
+          width: 75%;
+          transform: rotate(-30deg) translate(-30%, -00%);
+        }
+      }
+
+      
       h1, sub-title, nav {
         align-self: center;
         text-align: center;
@@ -39,7 +45,6 @@
   </head>
   <body>
     <a id="skip" href="#maincontent">Skip to main content</a>
-      <h3 id="noai">Proudly made without AI</h3>
 
     <header>
 
@@ -66,6 +71,7 @@
       </section>
       <hr>
     </header>
+    <h3 id="noai">Proudly made without AI</h3>
 
     <main id="maincontent">
       <section>
