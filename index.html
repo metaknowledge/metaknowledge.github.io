@@ -11,6 +11,7 @@
     <base href="./">
     <!-- small tweaks to the css from missing.css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
     <!-- <link href="https://barf.btxx.org/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" /> -->
     <style>
       img {
@@ -20,14 +21,37 @@
       .box {
         display: flex;
         flex-direction: row;
+      } 
+      h3#noai {
+        color: #0f1318;
+        text-align: center;
+        background-color: burlywood;
+        position: absolute;
+        top: 0;
+        width: 75%;
+       transform: rotate(-30deg) translate(-30%, -00%);
+      }
+      h1, sub-title, nav {
+        align-self: center;
+        text-align: center;
       }
     </style>
   </head>
   <body>
+    <a id="skip" href="#maincontent">Skip to main content</a>
+      <h3 id="noai">Proudly made without AI</h3>
+
     <header>
+
+      <section>
       <h1>Daniel Hughes</h1>
       <sub-title>He/Him</sub-title>
+      
       <nav id="links">
+        <p>
+          <a href="#aboutme">About Me</a> |
+          <a href="#programming">Programming</a>
+        </p>
         <p>
           <a href="https://danhugh.es/blog">Blog</a>
           <sup><a href="https://danhugh.es/blog/atom.xml">rss</a></sup> |
@@ -39,61 +63,86 @@
           <a href="https://www.linkedin.com/in/metaknowledge/">LinkedIn</a> |
           <a href="https://www.instagram.com/limes.limes/">Instagram</a>
         </p>
+      </section>
+      <hr>
     </header>
 
-    <main>
-      
-      <h2>About Me</h2>
-      <p>I am a senior at <span id="uw">University of Washington, Seattle</span> <em>graduating in june!</em>. I have a major in mathematics and a minor in data science.</p>
-      <p>I dabble in programming, and I hope to learn more about things like embedded software, game development, and shader rendering. I'm looking for a job in tech, so if you know of any open positions please email me.</p>
-      <p>I hope to move this website to be completely self hosting in my own homelab in the next year, and host my own email. Because I believe that the internet should be more independent.</p>
-      <h2>Programming Projects</h2>
-      <!-- <div class="box">
-        <p class="center"><strong>Rust CRUD App: ⛷️StraightLine</strong></p>
-        <a href="https://forum.danhugh.es" class="link chip">Deployment: forum.danhugh.es</a>
-        <a href="https://github.com/metaknowledge/StraightLine" class="link chip">Github</a>
-        <p>Rust, Postgres, HTMX, Docker, Discord API Auth, DigitalOcean</p>
-      </div> -->
-      <h3>Websites</h3>
-      <div class="box">
-        <div>
-          <p class="center"><strong>🎿Ski Instructor Training Manual</strong></p>
-          <a href="https://github.com/HuskyWinterSports/huskywintersports.github.io" class="link chip">Github repo</a> |
-          <a href="https://huskywintersports.github.io/" class="link chip">Website</a>
-          <p>Used: GitHub Pages, Markdown, Obsidian</p>
-          <p>I was the ski training director for Husky Winter sports, so I made an online training manual.</p>
-        </div>
-        <img src="imgs/trainingmanual.png" alt="landing page of the training manual">
-      </div>
-      <div class="box">
-        <div>
-          <p class="center"><strong>Husky Winter Sports</strong></p>
-          <a href="https://huskywintersports.org/" class="link chip">Website</a>
-          <p>Used: just html and css</p>
-          <p>The website for Husky Winter Sports dates back to 2001, and I wanted to give it an update.</p>
-        </div>
-        <img src="imgs/huskywintersportswebsite.png" alt="preview of the homepage">
-      </div>
+    <main id="maincontent">
+      <section>
+        <h1 id="aboutme">About Me</h1>
+        <p>I am a senior at <span id="uw">University of Washington, Seattle</span> <em>graduating in june!</em>. I have a major in mathematics and a minor in data science.</p>
+        <p>I dabble in programming, and I hope to learn more about things like embedded software, game development, and shader rendering. I'm looking for a job in tech, so if you know of any open positions please email me.</p>
+        <p>I hope to move this website to be completely self hosting in my own homelab in the next year, and host my own email. Because I believe that the internet should be more independent.</p>
 
-      <h3>Video Games</h3>
-      <div class="box">
-        <div>
-          <p class="center"><strong>Pygame Hackathon: 🛰️Satellitious</strong></p>
-          <a href="https://github.com/metaknowledge/Satellitious" class="link chip">Github</a>
-          <p>Used: Python, Pygame</p>
-          <p>Fun space game I made with pygame.</p>
+      </section>
+      <section>
+        <hr>
+        <h2 id="programming">Programming Projects</h2>
+        <!-- <div class="box">
+          <p class="center"><strong>Rust CRUD App: ⛷️StraightLine</strong></p>
+          <a href="https://forum.danhugh.es" class="link chip">Deployment: forum.danhugh.es</a>
+          <a href="https://github.com/metaknowledge/StraightLine" class="link chip">Github</a>
+          <p>Rust, Postgres, HTMX, Docker, Discord API Auth, DigitalOcean</p>
+        </div> -->
+        <h3 id="websites">Websites</h3>
+        <div class="box">
+          <div>
+            <p class="center"><strong>🦞Lobste.rs Clone</strong></p>
+            <a href="https://github.com/metaknowledge/LobstersClone" class="link chip">Github repo</a>
+            <!--| <a href="https://huskywintersports.github.io/" class="link chip">Website</a> -->
+            <p>Used: Rust, Sqlx + Postgres, Jinja html templates, htmx. Discord API</p>
+            <p>I browse the lobste.rs forum almost every day. I also want to learn how make a website with a backend of rust and postgres. So I made a forum site that uses Discord for authentication.</p>
+          </div>
+          <img src="https://github.com/metaknowledge/LobstersClone/raw/main/css/images/screenshot.png" alt="landing page of the training manual">
         </div>
-        <img src="imgs/homescreen.png" alt="home screen page of game" class="center">
-      </div>
-      <h3>Hackathon thingies</h3>
-      <div class="box">
-        <div>
-          <p class="center"><strong>DubHacks: 🗃️Course Explorer</strong></p>
-          <a href="https://github.com/nexusboyko/course_explorer" class="link chip">Github</a>
-          <p>Used: React, Python, Canvas API</p>
-          <p>For the DubHacks hackathon my team made an app to unify the different websites UW professors use.</p>
+        <div class="box">
+          <div>
+            <p class="center"><strong>🎿Ski Instructor Training Manual</strong></p>
+            <a href="https://github.com/HuskyWinterSports/huskywintersports.github.io" class="link chip">Github repo</a> |
+            <a href="https://huskywintersports.github.io/" class="link chip">Website</a>
+            <p>Used: GitHub Pages, Markdown, Obsidian</p>
+            <p>I was the ski training director for Husky Winter sports, so I made an online training manual.</p>
+          </div>
+          <img src="imgs/trainingmanual.png" alt="landing page of the training manual">
         </div>
-      </div>
+        <div class="box">
+          <div>
+            <p class="center"><strong>Husky Winter Sports</strong></p>
+            <a href="https://huskywintersports.org/" class="link chip">Website</a>
+            <p>Used: just html and css</p>
+            <p>The website for Husky Winter Sports dates back to 2001, and I wanted to give it an update.</p>
+          </div>
+          <img src="imgs/huskywintersportswebsite.png" alt="preview of the homepage">
+        </div>
+        <!-- <div class="box">
+          <div>
+            <p class="center"><strong>UKC website</strong></p>
+            <a href="https://students.washington.edu/ukc/" class="link chip">Website</a>
+            <p>Used: ssh and some good bash</p>
+            <p>I was able to reorganize the old University kayak club websites(yes plural) which took a lot of detective work on how everything was build ontop of the same $HOME</p>
+          </div>
+          <img src="imgs/ukc.png" alt="preview of the homepage">
+        </div> -->
+        <h3>Video Games</h3>
+        <div class="box">
+          <div>
+            <p class="center"><strong>Pygame Hackathon: 🛰️Satellitious</strong></p>
+            <a href="https://github.com/metaknowledge/Satellitious" class="link chip">Github</a>
+            <p>Used: Python, Pygame</p>
+            <p>Fun space game I made with pygame. Took about a week.</p>
+          </div>
+          <img src="imgs/homescreen.png" alt="home screen page of game" class="center">
+        </div>
+        <h3>Hackathon thingies</h3>
+        <div class="box">
+          <div>
+            <p class="center"><strong>DubHacks: 🗃️Course Explorer</strong></p>
+            <a href="https://github.com/nexusboyko/course_explorer" class="link chip">Github</a>
+            <p>Used: React, Python, Canvas API</p>
+            <p>For the DubHacks hackathon my team made an app to unify the different websites UW professors use.</p>
+          </div>
+        </div>
+      </section>
       
 
       <!-- <div class="box">
@@ -106,6 +155,7 @@
     </main>
     <footer>
       <a href="./humans.txt">humans.txt</a>
+      | <a href="./robots.txt">robots.txt</a> 
     </footer>
 
     <script>

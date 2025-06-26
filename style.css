@@ -12,9 +12,10 @@ span.email b {
 
 body {
     font-family: sans-serif;
-    margin: 0 auto;
-    max-width: 60em; /* Widened the width because someone told me the style was "smartphone first" */
-    padding: 1rem;
+    margin: 0;
+    background-color: #0f1318;
+    color: cornsilk;
+
 }
 
 img {
@@ -29,17 +30,22 @@ s {
     color: red;
 }
 
+section hr {
+    color: #0f1318;
+    width: 100%;
+}
+
 .box {
-    background-color: rgb(0, 46, 59);
-    padding: .5em;
-    padding-top: .5em;
+    background-color: #0f1318;
+    padding: 1em;
+    /* padding-top: .5em; */
     border-radius: 1em;
     margin-bottom: 1em;
-
+    color: cornsilk;
 }
 
 footer {
-    margin-top: 1em;
+    margin: 1em auto;
 }
 
 .center {
@@ -47,7 +53,20 @@ footer {
     margin: 0 auto;
 }
 
-/* Highlights imgs that don't have alt tags */
-img:not([alt]) {
-    border: 1rem solid red;
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header, section, footer {
+    max-width: 60em; /* Widened the width because someone told me the style was "smartphone first" */
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main {
+    background-color: rgb(80, 150, 207);
+    color: #0f1318;
 }
