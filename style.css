@@ -15,8 +15,10 @@ body {
     margin: 0;
     background-color: #0f1318;
     color: cornsilk;
-
+    scroll-behavior: smooth;
 }
+
+
 
 img {
     max-width: 100%;
@@ -70,3 +72,4 @@ main {
     background-color: rgb(80, 150, 207);
     color: #0f1318;
 }
+
