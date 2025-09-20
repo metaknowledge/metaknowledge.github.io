@@ -1,0 +1,23 @@
+span.email b {
+    display: none;
+}
+
+::target-text {
+    background-color: plum;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+::target-text {
+    background-color: plum;
+}
+
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
