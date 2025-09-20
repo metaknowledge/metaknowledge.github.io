@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- content="width=device-width, initial-scale=1.0" why? -->
+     <!-- why can't it be width="device-width" initial-scale=1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="color-scheme" content="dark">
+    <!-- <link rel="icon" href="data:,"> -->
+    <title>Daniel's Website</title>
+    <base href="./">
+    <!-- small tweaks to the css from missing.css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <!-- <link href="https://barf.btxx.org/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed for blog posts" /> -->
+    <script data-goatcounter="https://metaknowledge.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script> 
+    <style>
+      body {
+        background-image: url("imgs/wooden-cork-board-seamless.png");
+        background-repeat: repeat;
+        background-size: 400px;
+      }
+      #noai {
+          color: #0f1318;
+          text-align: center;
+          background-color: burlywood;
+      }
+      @media only screen and (min-width: 600px)  {
+        h3#noai {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 75%;
+          transform: rotate(20deg) translate(20%, -00%);
+        }
+
+        .box {
+          flex-direction: row;
+        }
+      }
+      div > img {
+        width: 90%;
+        padding: 1em;
+        display: block;
+        margin: 0 auto;
+      }
+      main > *:nth-child(3n) {
+        background-color: whitesmoke;
+        color: black;
+        border: white solid .25em;
+        border-style: outset;
+        padding: 1em;
+      }
+      main > *:nth-child(3n+2) {
+        background-image: url('imgs/stickynote.png');
+        background-size: contain;
+        padding: 10%;
+        padding-top: 15%;
+        background-clip: border-box;
+        background-repeat: no-repeat;
+        color: black;
+      }
+      main > *:nth-child(3n+2) > img {
+        padding: 0;
+        margin: 0;
+        margin-right: 4em;
+        width: 70%;
+      }
+
+      /* Credit to: Kevin Powell for this css
+      https://codepen.io/kevinpowell/pen/dyavyPg
+      slightly modified
+       */
+      main > *:nth-child(3n+1) {
+        --main-line-color: hsl(234, 62%, 86%);
+        --side-line-color: hsl(350, 100%, 91%);
+        --paper-color: hsl(0, 15%, 95%);
+        --ink-color: hsl(0, 0%, 12%);
+        --line-thickness: 3px;
+        --top-space: 4lh;
+        background: var(--paper-color);
+        margin: 2rem;
+        padding: calc(var(--top-space) - .7lh) 3rem 1rem 5.5rem;
+
+        line-height: 1.5;
+        color: var(--ink-color);
+        background-image: 
+          /* the red line */ linear-gradient(
+            90deg,
+            transparent,
+            transparent 4rem,
+            var(--side-line-color) 4rem,
+            var(--side-line-color) 4.25rem,
+            transparent 4.25rem
+          ),
+          /*  The top space  */
+            linear-gradient(
+              var(--paper-color),
+              var(--paper-color) var(--top-space),
+              transparent var(--top-space)
+            ),
+          /* the blue lines */
+            repeating-linear-gradient(
+              transparent,
+              transparent calc(1lh - var(--line-thickness)),
+              var(--main-line-color) calc(1lh - var(--line-thickness)),
+              var(--main-line-color) 1lh,
+              transparent 1lh
+            );
+        box-shadow: 0 0 1rem rgb(0 0 0 / 0.25);
+      } 
+      
+      main > *:nth-child(3n+1) > p {
+        padding: 0 !important;
+        margin-bottom: 1lh !important ;
+      }
+      
+
+      img {
+        aspect-ratio: 16 / 9;
+      }
+      
+      .box {
+        display: flex;
+        flex-direction: column;
+        grid-column-end: span 2;
+      }
+      header {
+        background-color: whitesmoke;
+        color: black;
+        border: thistle solid;
+        border-style: outset;
+        border-width: 1em;
+      }
+
+      /*h1, sub-title, nav {
+        align-self: center;
+        text-align: center;
+      }*/
+      main {
+        display: grid;
+        gap: 1.5em;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-flow: dense;
+        width: 100%;
+      }
+
+      a {
+        color: blue;;
+      }
+      a:visited {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="skip" href="#maincontent">Skip to main content</a>
+
+    <header>
+      <section>
+      <h1>Daniel Hughes</h1>
+      <sub-title>He/Him</sub-title>
+      <nav>
+        <p>
+          <a href="https://danhugh.es/blog">Blog</a>
+          <sup><a href="https://danhugh.es/blog/atom.xml">rss</a></sup> |
+          <a href="https://github.com/metaknowledge">Github</a> |
+          <!-- Email obfuscation techique learned from https://spencermortensen.com/articles/email-obfuscation/ -->
+          <a href="mailto:%64%61%6e%69%65%6c%68%35%40%75%77%2e%65%64%75"><span class="email">danielh5@uw<b>.example</b>.edu</span></a> |
+          <a href="https://www.chess.com/member/pap3rn">chess.com</a> |
+          <a href="https://www.linkedin.com/in/metaknowledge/">LinkedIn</a> |
+          <a href="https://www.instagram.com/limes.limes/">Instagram</a>
+        </p>
+      </nav>
+      </section>
+    </header>
+    <h3 id="noai">
+      <marquee scrollamount="10px">Proudly making without AI</marquee>
+    </h3>
+    <hr style="height: 10px; background-color: black;">
+    <main id="maincontent">
+      <section id="aboutme" style="grid-row-end: span 3; grid-column-end: span 2;">
+        <h3>About Me</h3>
+        <p>I am a senior at <span id="uw">University of Washington, Seattle</span> <em>graduating in june!</em>. I have a major in mathematics and a minor in data science.</p>
+        <p>I dabble in programming, and I hope to learn more about things like embedded software, game development, and shader rendering. I'm looking for a job in tech, so if you know of any open positions please email me.</p>
+        <p>I hope to move this website to be completely self hosting in my own homelab in the next year, and host my own email. Because I believe that the internet should be more independent.</p>
+      </section>
+      <!-- <h3 id="websites">Websites</h3>  -->
+      <div class="box">
+        <div>
+          <p class="center"><strong>🦞Lobste.rs Clone</strong></p>
+          <a href="https://github.com/metaknowledge/LobstersClone" class="link chip">Github repo</a>
+          <!--| <a href="https://huskywintersports.github.io/" class="link chip">Website</a> -->
+          <p>Used: Rust, Sqlx + Postgres, Jinja html templates, htmx. Discord API</p>
+          <p>I browse the lobste.rs forum almost every day. I also want to learn how make a website with a backend of rust and postgres. So I made a forum site that uses Discord for authentication.</p>
+        </div>
+        <img src="https://github.com/metaknowledge/LobstersClone/raw/main/css/images/screenshot.png" alt="landing page of the training manual" loading="lazy">
+      </div>
+      <div class="box">
+        <div>
+          <p class="center"><strong>🎿Ski Instructor Training Manual</strong></p>
+          <a href="https://github.com/HuskyWinterSports/huskywintersports.github.io" class="link chip">Github repo</a> |
+          <a href="https://huskywintersports.github.io/" class="link chip">Website</a>
+          <p>Used: GitHub Pages, Markdown, Obsidian</p>
+          <p>I was the ski training director for Husky Winter sports, so I made an online training manual.</p>
+        </div>
+        <img src="imgs/trainingmanual.png" alt="landing page of the training manual" loading="lazy">
+      </div>
+      <div style="grid-column-end: span 2;">
+        <h3>Husky Winter Sports</h3>
+        <p><a href="https://huskywintersports.org/" class="link chip">Website</a></p>
+        <p>Used: just html and css</p>
+        <p>The website for Husky Winter Sports dates back to 2001, and I wanted to give it an update.</p>
+        <img src="imgs/huskywintersportswebsite.png" alt="preview of the homepage" loading="lazy">
+      </div>
+      <!-- <div class="box">
+        <div>
+          <p class="center"><strong>UKC website</strong></p>
+          <a href="https://students.washington.edu/ukc/" class="link chip">Website</a>
+          <p>Used: ssh and some good bash</p>
+          <p>I was able to reorganize the old University kayak club websites(yes plural) which took a lot of detective work on how everything was build ontop of the same $HOME</p>
+        </div>
+        <img src="imgs/ukc.png" alt="preview of the homepage">
+      </div> -->
+      <!-- <h3>Video Games</h3> -->
+      <div class="box">
+        <div>
+          <p class="center"><strong>Pygame Hackathon: 🛰️Satellitious</strong></p>
+          <a href="https://github.com/metaknowledge/Satellitious" class="link chip">Github</a>
+          <p>Used: Python, Pygame</p>
+          <p>Fun space game I made with pygame. Took about a week.</p>
+        </div>
+        <img src="imgs/homescreen.png" alt="home screen page of game" class="center" loading="lazy">
+      </div>
+      <div class="box">
+        <div>
+          <p class="center"><strong>Dotfiles: NixOS</strong></p>
+          <a href="https://github.com/metaknowledge/nix-dotfiles" class="link chip">Github</a>
+          <p>Used: Linux, Nix, NixOS, all my free time</p>
+          <p>I've been using nix for the past year an I really like it. I still learning, but I feel like I'm on the forefront of development technology.</p>
+        </div>
+        <img src="https://raw.githubusercontent.com/metaknowledge/nix-dotfiles/refs/heads/main/preview.webp" alt="picture of my desktop" class="center" loading="lazy">
+      </div>
+      <!-- <h3>Hackathon thingies</h3> -->
+      <div style="grid-column-end: span 2;">
+        <h3 class="center">DubHacks Hackathon</h3>
+        <p>Project: 🗃️Course Explorer</p>
+        <p><a href="https://github.com/nexusboyko/course_explorer" class="link chip">Github</a></p>
+        <p>Used: React, Python, Canvas API</p>
+        <p>For the DubHacks hackathon my team made an app to unify the different websites UW professors use.</p>
+      </div>
+      <div>
+        <p>Hi!!!!!</p>
+      </div>
+      <div style="grid-column-end: span 4; margin: 0 auto">
+        <a href="http://textfiles.com/underconstruction/">
+          <img src="imgs/HeHeartlandForest8728imagesunderconstruction3.gif" alt="construction man">
+          <img src="imgs/CoColosseumBleachers1625construction.gif" alt="banner">
+          <img src="imgs/HeHeartlandForest8728imagesunderconstruction3.gif" alt="construction man">
+        </a>
+      </div>
+      <div style="grid-column-end: span 3;">
+        <p>You like Blues Traveler?</p>
+        <audio controls ">
+          <source src="personal/BluesTraveler_v1_02_JustForMe.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <section>
+        <p>Did you check the robots.txt?</p>
+
+      </section>
+      <div>
+        <h3>r/place</h3>
+        <p>In April of 2022 I participated in the second r/place event. Here's a pic of the area UW claimed.</p>
+        <img src="./imgs/rplace-uw.png" alt="a pixilated U.W. logo with cherry blossoms">
+      </div>
+      <div style="grid-column-end: span 2;">
+        <p>If you can get a higher technology/computer score email me the results, so I can compare. :)</p>
+        <a href="http://www.nerdtests.com/ft_nt2.php">
+          <img src="07b8137334e7c14c.png" alt="NerdTests.com says I'm a Slightly Dorky High Nerd.  Click here to take the Nerd Test, get geeky images and jokes, and write on the nerd forum!">
+        </a>
+      </div>
+      <div>
+        <p>Check out all my bookmarks from my voyages across the internet: <a href="./bookmarks">bookmarks</a></p>
+      </div>
+      <div style="grid-column-end: span 2; grid-row-end: span 2;">
+        <h3>Skiing</h3>
+        <p>I've been skiing for most of my conscious life, and ski instructing for 8 years now. Here's a group photo of my last year in Husky Winter Sports(the best ski club at UW).</p>
+        <img src="./imgs/2024-2025.jpg" alt="a group photo of HWS at snoqualmie">
+      </div>
+      <img src="imgs/computer_girl.webp" alt="computer girl - golden boy anime" style="width: 300px; grid-column-end: span 2; grid-row-end: span 2;">
+      <div>
+        <p>You should try whitewater kayaking</p>
+      </div>
+      <div>
+        <p><a href="https://danhugh.es/blog/Anime%20List/">Anime I've Seen</a></p>
+      </div>
+      <div>
+        <p>Using AI is immoral</p>
+      </div>
+
+
+
+
+      <!-- <div class="box">
+      <p class="center"><strong>Advent of Code 2023</strong></p>
+      <a href="https://github.com/metaknowledge/advent_of_code_2023" class="link chip">Github</a>
+      <p>Used: Rust</p>
+      </div> -->
+    </main>
+    <footer>
+      Check out my <a href="./humans.txt">humans.txt</a>!
+      Or if your a robot: <a href="./robots.txt">robots.txt</a> 
+    </footer>
+
+    <script>
+      "use strict";
+      //
+      function colorLog(message){
+        console.log(`%c${message}`, "color:#cc0000;")
+      }
+      colorLog("▓█████▄  ▄▄▄       ███▄    █  ██▓▓█████  ██▓        ██▓  ██████     ▄████▄   ▒█████   ▒█████   ██▓    \n▒██▀ ██▌▒████▄     ██ ▀█   █ ▓██▒▓█   ▀ ▓██▒       ▓██▒▒██    ▒    ▒██▀ ▀█  ▒██▒  ██▒▒██▒  ██▒▓██▒    \n░██   █▌▒██  ▀█▄  ▓██  ▀█ ██▒▒██▒▒███   ▒██░       ▒██▒░ ▓██▄      ▒▓█    ▄ ▒██░  ██▒▒██░  ██▒▒██░    \n░▓█▄   ▌░██▄▄▄▄██ ▓██▒  ▐▌██▒░██░▒▓█  ▄ ▒██░       ░██░  ▒   ██▒   ▒▓▓▄ ▄██▒▒██   ██░▒██   ██░▒██░    \n░▒████▓  ▓█   ▓██▒▒██░   ▓██░░██░░▒████▒░██████▒   ░██░▒██████▒▒   ▒ ▓███▀ ░░ ████▓▒░░ ████▓▒░░██████▒\n ▒▒▓  ▒  ▒▒   ▓▒█░░ ▒░   ▒ ▒ ░▓  ░░ ▒░ ░░ ▒░▓  ░   ░▓  ▒ ▒▓▒ ▒ ░   ░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░▓  ░\n ░ ▒  ▒   ▒   ▒▒ ░░ ░░   ░ ▒░ ▒ ░ ░ ░  ░░ ░ ▒  ░    ▒ ░░ ░▒  ░ ░     ░  ▒     ░ ▒ ▒░   ░ ▒ ▒░ ░ ░ ▒  ░\n ░ ░  ░   ░   ▒      ░   ░ ░  ▒ ░   ░     ░ ░       ▒ ░░  ░  ░     ░        ░ ░ ░ ▒  ░ ░ ░ ▒    ░ ░   \n   ░          ░  ░         ░  ░     ░  ░    ░  ░    ░        ░     ░ ░          ░ ░      ░ ░      ░  ░\n ░                                                                 ░                                  \n");
+      colorLog("Thank you to matt wang @ mattx.wang for this idea")
+    </script>
+  </body>
+</html>
