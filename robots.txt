@@ -1,5 +1,8 @@
 User-agent: Ariadne
 Allow: /
 
+User-agent: search.marginalia.nu
+Allow: /
+
 User-agent: *
 Disallow: /
