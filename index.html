@@ -43,21 +43,20 @@
         .box {
           flex-direction: row;
         }
+
         main {
           display: grid;
           gap: 1.5em;
           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
           grid-auto-flow: dense;
           width: 100%;
-        }
-        
-
-        
+        }  
         
         main > *:nth-child(3n+1) > p {
           padding: 0 !important;
           margin-bottom: 1lh !important ;
         }
+
         .box {
           
           grid-column-end: span 2;
@@ -154,7 +153,7 @@
       }
       
 
-      img {
+      img.a16x9 {
         aspect-ratio: 16 / 9;
       }
       
@@ -234,7 +233,7 @@
         <div>
           <p class="center"><strong>🎿Ski Instructor Training Manual</strong></p>
           <a href="https://github.com/HuskyWinterSports/huskywintersports.github.io" class="link chip">Github repo</a> |
-          <a href="https://huskywintersports.github.io/" class="link chip">Website</a>
+          <a href="https://huskywintersports.github.io/" class="link chip a16x9">Website</a>
           <p>Used: GitHub Pages, Markdown, Obsidian</p>
           <p>I was the ski training director for Husky Winter sports, so I made an online training manual.</p>
         </div>
@@ -320,7 +319,7 @@
       <div style="grid-column-end: span 2; grid-row-end: span 2;">
         <h3>Skiing</h3>
         <p>I've been skiing for most of my conscious life, and ski instructing for 8 years now. Here's a group photo of my last year in Husky Winter Sports(the best ski club at UW).</p>
-        <img src="./imgs/2024-2025.jpg" alt="a group photo of HWS at snoqualmie">
+        <a href="https://students.washington.edu/huskyws/hws_website/"><img src="./imgs/2024-2025.jpg" alt="a group photo of HWS at snoqualmie" style="width: 90%;"></a>
       </div>
       <!-- <div style="width: 400px; grid-column-end: span 2; grid-row-end: span 2;">
         <img src="imgs/computer_girl.webp" alt="computer girl - golden boy anime" >
@@ -332,8 +331,9 @@
         <p>You should try whitewater kayaking</p>
       </div>
       <div>
-        <p>Friends sites:</p>
-        <p><a href="https://alipson.me/">https://alipson.me/</a></p>
+        <p>Friends's sites:</p>
+        <p><a href="https://alipson.me/">alipson.me</a></p>
+        <p><a href="https://julianbraun.dev">julianbraun.dev</a></p>
       </div>
 
 
