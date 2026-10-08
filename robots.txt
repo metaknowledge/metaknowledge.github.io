@@ -4,5 +4,8 @@ Allow: /
 User-agent: search.marginalia.nu
 Allow: /
 
+User-agent: Kagibot
+Allow: /
+
 User-agent: *
 Disallow: /
